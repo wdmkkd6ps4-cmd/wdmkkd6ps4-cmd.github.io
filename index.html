@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JALEAS – Mobilitetsanalyse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #f8f7f4;
+            --text: #1a1a1a;
+            --text-muted: #5a5a5a;
+            --accent: #2d5a4a;
+            --accent-light: #e8f0ed;
+            --border: #e0ded8;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .logo {
+            font-family: 'Instrument Serif', serif;
+            font-size: 1.5rem;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-family: 'Instrument Serif', serif;
+            font-size: clamp(2.5rem, 6vw, 3.5rem);
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+            max-width: 540px;
+            margin-bottom: 3.5rem;
+        }
+
+        .section-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .contact {
+            margin-top: 1rem;
+        }
+
+        .contact-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-details {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .contact-details a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 480px) {
+            main {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .logo {
+                margin-bottom: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="logo">JALEAS</div>
+        
+        <h1>Interaktive verktøy for mobilitetsanalyse</h1>
+        
+        <p class="intro">
+            Dashbord og kartløsninger for visualisering av transportdata og mobilitetsstrømmer. 
+            Utviklet for å gi innsikt i reisemønstre og trafikkutvikling.
+        </p>
+
+        <div class="contact">
+            <p class="section-label">Kontakt</p>
+            <p class="contact-name">Arve Halseth</p>
+            <p class="contact-details">
+                <a href="tel:+4799698661">99 69 86 61</a><br>
+                <a href="mailto:aha@jaleas.no">aha@jaleas.no</a>
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 JALEAS
+    </footer>
+</body>
+</html>
